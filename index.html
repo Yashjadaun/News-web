@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>News-Hub</title>
+  </head>
+  <body class="m-0 p-0">
+
+    <div class="container-fluid m-0 p-0">
+
+        <!--navbar -->
+        <div>
+            <nav class="navbar navbar-expand-lg navbar-collapse bg-secondary" id="nav1" >
+                <div class="container-fluid">
+                  <a class="navbar-brand text-warning" href="#">News Hub</a>
+                  <button class="navbar-toggler bg-gradient" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-justify" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M2 12.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"/>
+                    </svg></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-24" id="category">
+                        <li class="nav-item">
+                            <span class="nav-link " aria-current="page" id="general">General</span>
+                        </li>
+                      <li class="nav-item">
+                        <span class="nav-link " aria-current="page" id="bussiness">Bussiness</span>
+                      </li>
+                      <li class="nav-item">
+                        <span class="nav-link" id="sports">Sports</span>
+                      </li>
+                      <li class="nav-item">
+                        <span class="nav-link " aria-current="page" id="technology">Technology</span>
+                      </li>
+                      <li class="nav-item">
+                        <span class="nav-link" id="entertainment">Entertainment</span>
+                      </li>
+                      <h3 >Select country:</h3><br>
+                      <form id="selectCountry">
+                        
+                        <div class="country">
+                          
+                          <select id="countries">
+                            
+                            <option style="text-transform: capitalize;">United Arab Emirates</option>
+                            <option style="text-transform: capitalize;">Argentina</option>
+                            <option style="text-transform: capitalize;">Austria</option>
+                            <option style="text-transform: capitalize;">Australia</option>
+                            <option style="text-transform: capitalize;">Belgium</option>
+                            <option style="text-transform: capitalize;">Bulgaria</option>
+                            <option style="text-transform: capitalize;">Brazil</option>
+                            <option style="text-transform: capitalize;">Canada</option>
+                            <option style="text-transform: capitalize;">Switzerland</option>
+                            <option style="text-transform: capitalize;">China</option>
+                            <option style="text-transform: capitalize;">Colombia</option>
+                            <option style="text-transform: capitalize;">Cuba</option>
+                            <option style="text-transform: capitalize;">Czechi</option>
+                            <option style="text-transform: capitalize;">Germany</option>
+                            <option style="text-transform: capitalize;">Egypt</option>
+                            <option style="text-transform: capitalize;">Frence</option>
+                            <option style="text-transform: capitalize;">United Kingdom of Great Britain and Northern Ireland</option>
+                            <option style="text-transform: capitalize;">Greece</option>
+                            <option style="text-transform: capitalize;">Hong Kong</option>
+                            <option style="text-transform: capitalize;">Hungary</option>
+                            <option style="text-transform: capitalize;">Indonesia</option>
+                            <option style="text-transform: capitalize;">Ireland</option>
+                            <option style="text-transform: capitalize;">Israel</option>
+                            <option selected style="text-transform: capitalize;">India</option>
+                            <option style="text-transform: capitalize;">Italy</option>
+                            <option style="text-transform: capitalize;">Japan</option>
+                            <option style="text-transform: capitalize;">Korea</option>
+                            <option style="text-transform: capitalize;">Lithuania</option>
+                            <option style="text-transform: capitalize;">latvia</option>
+                            <option style="text-transform: capitalize;">Morocco</option>
+                            <option style="text-transform: capitalize;">Mexico</option>
+                            <option style="text-transform: capitalize;">Malaysia</option>
+                            <option style="text-transform: capitalize;">Nigeria</option>
+                            <option style="text-transform: capitalize;">Nicaragua</option>
+                            <option style="text-transform: capitalize;">Norway</option>
+                            <option style="text-transform: capitalize;">Newzealand</option>
+                            <option style="text-transform: capitalize;">Philippines</option>
+                            <option style="text-transform: capitalize;">Poland</option>
+                            <option style="text-transform: capitalize;">Portugal</option>
+                            <option style="text-transform: capitalize;">romania</option>
+                            <option style="text-transform: capitalize;">Serbia</option>
+                            <option style="text-transform: capitalize;">Russian Federation</option>
+                            <option style="text-transform: capitalize;">South Africa</option>
+                            <option style="text-transform: capitalize;">Sweden</option>
+                            <option style="text-transform: capitalize;">Singapore</option>
+                            <option style="text-transform: capitalize;">Slovenia</option>
+                            <option style="text-transform: capitalize;">Slovakia</option>
+                            <option style="text-transform: capitalize;">Thailand</option>
+                            <option style="text-transform: capitalize;">Turkey</option>
+                            <option style="text-transform: capitalize;">Taiwan</option>
+                            <option style="text-transform: capitalize;">Ukraine</option>
+                            <option style="text-transform: capitalize;">The United States Of America</option>
+                            <option style="text-transform: capitalize;">Venezuela</option>
+                          </select>
+                          <input id="inp_country" class="btn btn-outline-warning"type="submit" value="submit">
+                        </div>
+                        
+                      </form>
+                      
+                    </ul>
+
+                    <button onclick="myFunction()" class="darkbtn">Dark mode</button>
+
+               
+
+
+                    <form class="d-flex">
+                      <input class="form-control me-2" type="text" id="newsQuery" placeholder="Search news">
+                      <button class="btn btn-outline-warning" type="button" id="searchBtn">Search</button>
+                    </form>
+                  </div>
+                </div>
+              </nav>
+        </div>
+
+        <!-- main News content -->
+        <div class="bodymain">
+            <div class="row" id="newsType"></div>
+            <div class="row" id="newsdetails"></div>
+        </div>
+
+        <!--footer-->
+        <div>
+            <div>
+                <nav class="navbar navbar-expand-lg navbar-dark bg-secondary mt-4">
+                  <div class="container-fluid">
+                    <h5 class="text-white me-auto ms-auto">Developed by <span class="text-warning">yash jadaun</span></h5>
+                  </div>
+                </nav>
+              </div>
+        </div>
+
+    </div>
+
+
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  </body>
+</html>
